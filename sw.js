@@ -1,4 +1,4 @@
-const nombreCache = 'apv-v1';
+const nombreCache = 'apv-v3';
 const archivos = [
     '/',
     'index.html',

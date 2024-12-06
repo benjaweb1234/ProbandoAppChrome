@@ -13,63 +13,34 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="black">
+    <link rel="icon" href="img/icons/icon-72x72.png" type="image/png">
+
 </head>
 <body>
-    <h2 class="text-center my-5 titulo">Veterinaria githup</h2>
+    <h2 class="text-center my-5 titulo">Resolver Sistema de Ecuaciones 3x3</h2>
     <div class="container mt-5 p-5">
         <div id="contenido" class="row">
-            <div class="col-md-6 agregar-cita">
-                <form id="nueva-cita">
-                    <legend class="mb-4">Datos del Paciente</legend>
-                    <div class="form-group row">
-                        <label class="col-sm-4 col-lg-4 col-form-label">Nombre Mascota:</label>
-                        <div class="col-sm-8 col-lg-8">
-                            <input type="text" id="mascota" name="mascota" class="form-control" placeholder="Nombre Mascota">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-4 col-lg-4 col-form-label">Propietario:</label>
-                        <div class="col-sm-8 col-lg-8">
-                            <input type="text" id="propietario" name="propietario" class="form-control"  placeholder="Nombre Dueño de la Mascota">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
-                        <div class="col-sm-8 col-lg-8">
-                            <input type="tel" id="telefono" name="telefono" class="form-control"  placeholder="Número de Teléfono">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
-                        <div class="col-sm-8 col-lg-8">
-                            <input type="date" id="fecha" name="fecha" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="col-sm-4 col-lg-4 col-form-label">Hora:</label>
-                        <div class="col-sm-8 col-lg-8">
-                            <input type="time" id="hora" name="hora" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="col-sm-4 col-lg-4 col-form-label">Sintomas:</label>
-                        <div class="col-sm-8 col-lg-8">
-                            <textarea id="sintomas" name="sintomas" class="form-control"></textarea>
-                        </div>
+            <div class="col-md-12">
+                <form id="ecuaciones-form">
+                    <legend class="mb-4">Ingrese las ecuaciones</legend>
+                    <div class="form-group">
+                        <label for="ecuacion1">Ecuación 1:</label>
+                        <input type="text" id="ecuacion1" name="ecuacion1" class="form-control" placeholder="Ej: x+2y+z=7">
                     </div>
                     <div class="form-group">
-                            <button type="submit" class="btn btn-success w-100 d-block">Crear Cita</button>
+                        <label for="ecuacion2">Ecuación 2:</label>
+                        <input type="text" id="ecuacion2" name="ecuacion2" class="form-control" placeholder="Ej: 3x+y+z=5">
                     </div>
+                    <div class="form-group">
+                        <label for="ecuacion3">Ecuación 3:</label>
+                        <input type="text" id="ecuacion3" name="ecuacion3" class="form-control" placeholder="Ej: 2x+3y-z=3">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="resolverEcuaciones()">Calcular</button>
                 </form>
+                <div id="resultado" class="mt-5"></div>
             </div>
-            <div class="col-md-6">
-                <h2 id="administra" class="mb-4"></h2>
-                <ul id="citas" class="list-group lista-citas"></ul>
-            </div>
-        </div> <!--.row-->
-    </div><!--.container-->
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
     <script src="js/apv.js"></script>
