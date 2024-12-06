@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="PWA JS.">
+    <title>Administrador de Pacientes</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="black">
+</head>
+<body>
+<h2 class="text-center my-5 titulo">Admin de Pacientes de Veterinaria</h2>
+<div class="container mt-5 p-5">
+    <div class="alert alert-danger text-center" role="alert">
+        <h1 class="alert-heading">¡Error!</h1>
+        <p class="mb-4">Hubo un error, esta página no se puede mostrar.</p>
+        <hr>
+        <p class="mb-4">Por favor, intente lo siguiente:</p>
+        <ul class="list-unstyled">
+            <li><i class="bi bi-arrow-right-circle"></i> Verifique su conexión a Internet.</li>
+            <li><i class="bi bi-arrow-right-circle"></i> Recargue la página.</li>
+            <li><i class="bi bi-arrow-right-circle"></i> Contacte al soporte técnico si el problema persiste.</li>
+        </ul>
+        <button type="button" class="btn btn-primary mt-3" onclick="location.reload();">Recargar Página</button>
+        <button type="button" class="btn btn-secondary mt-3" onclick="window.location.href='index.html';">Ir a Inicio</button>
+    </div>
+</div><!--.container-->
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
